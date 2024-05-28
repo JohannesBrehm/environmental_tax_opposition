@@ -1,1 +1,1 @@
-Public repository for replicating the "Leveraging machine learning to understand opposition to environmental tax increases across countries and over time" by Johannes Brehm and Henri Gruhl (2024). 
+This repository contains the code for replicating the analysis in the paper "Leveraging machine learning to understand opposition to environmental tax increases across countries and over time" by Johannes Brehm and Henri Gruhl (2024). The doi is 10.5281/zenodo.11371420.
