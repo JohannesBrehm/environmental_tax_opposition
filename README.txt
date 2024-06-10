@@ -6,7 +6,7 @@ The research reported in the article „Leveraging machine learning to understan
 and over time” uses data from the ISSP's Environment III (2010) and Environment IV (2020) modules, which are freely accessible upon registration 
 on the ISSP website (https://issp.org/data-download/by-year/). For the 2010 module version 3 (2019-06-13 Australia, Iceland, Netherlands and 
 Portugal added, Errata corrected (current version) https://doi.org/10.4232/1.13271) is used and for the 2020 module version 2 is used (2023-08-25 
-Full Release, 14 countries added (current version) ttps://doi.org/10.4232/1.14153). These are the latest available versions when the analysis was conducted.
+Full Release, 14 countries added (current version) https://doi.org/10.4232/1.14153). These are the latest available versions when the analysis was conducted.
 
 The data files needed are: 
 - 2010: ZA5500_v3-0-0
