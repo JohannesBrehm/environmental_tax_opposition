@@ -100,6 +100,7 @@ local user=1
   *** In R with R-Script labelled "11_5_importance_plot_fullsample_differentoutcome"
   *** In R with R-Script labelled "11_6_cor_plot"
   do "$dodir/11_7_regressionestimates.do"
-
+  *** In R with R-Script labelled "11_7_alldependenceplots_fullsample_differentoutcome2"
+  *** In R with R-Script labelled "11_8_importance_plot_fullsample_differentoutcome2"
 
 

@@ -120,6 +120,11 @@
 	replace nowtp_taxes_strong = 0 if v30==4|v30==3|v30==1|v30==2|v30==-8
 	la var nowtp_taxes_strong "No willingness to pay much higher taxes to protect the environment strong"
 	
+			gen nowtp_taxes_weak = . 
+	replace nowtp_taxes_weak = 1 if v30==-8|v30==3|v30==4|v30==5
+	replace nowtp_taxes_weak = 0 if v30==1|v30==2
+	la var nowtp_taxes_weak "No willingness to pay much higher taxes to protect the environment weak"
+	
 	
 	
 // OPPOSITION ENVIRONMENTAL PRICES
@@ -409,7 +414,7 @@
 	
 	
 	**Keep only those newly created
-	keep CASEID c_alphan INC_decile nowtp_taxes nowtp_taxes_strong nowtp_prices willing_cutsl concern cc_env_problem priorization_env knowledge scepticism seriousness everyday_life risk_perception trust_people trust_institutions reciprocity env_committment modern_life_harms science_solution growth_harms worry_jobs env_consumption right_party vote_le religiousness petition donation female age education gap_perception rural children brown_job weighted_carbon_price revenue_recycling inc_tax env_tax  good_governance
+	keep CASEID c_alphan INC_decile nowtp_taxes nowtp_taxes_strong nowtp_taxes_weak nowtp_prices willing_cutsl concern cc_env_problem priorization_env knowledge scepticism seriousness everyday_life risk_perception trust_people trust_institutions reciprocity env_committment modern_life_harms science_solution growth_harms worry_jobs env_consumption right_party vote_le religiousness petition donation female age education gap_perception rural children brown_job weighted_carbon_price revenue_recycling inc_tax env_tax  good_governance
 
 	**Drop observations with missing outcome 
 	

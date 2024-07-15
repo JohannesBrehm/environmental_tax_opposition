@@ -142,6 +142,10 @@
 	replace nowtp_taxes_strong = 0 if v27==4|v27==3|v27==1|v27==2|v27==-8
 	la var nowtp_taxes_strong "No willingness to pay much higher taxes to protect the environment strong"
 	
+		gen nowtp_taxes_weak = .
+	replace nowtp_taxes_weak = 1 if v27==-8|v27==3|v27==4|v27==5
+	replace nowtp_taxes_weak = 0 if v27==1|v27==2
+	la var nowtp_taxes_weak "No willingness to pay much higher taxes to protect the environment weak"
 	
 	
 	gen wtp_prices = . 
@@ -492,7 +496,7 @@
 	
 	
 *** Clean data keep only relevant data
-	keep CASEID country c_alphan nowtp_taxes nowtp_taxes_strong wtp_taxes wtp_prices nowtp_prices concern priorization_env knowledge scepticism seriousness belief_cc risk_perception direct_experience cc_env_problem everyday_life /// ENVIRONMENTAL VALUATIONS
+	keep CASEID country c_alphan nowtp_taxes nowtp_taxes_strong nowtp_taxes_weak wtp_taxes wtp_prices nowtp_prices concern priorization_env knowledge scepticism seriousness belief_cc risk_perception direct_experience cc_env_problem everyday_life /// ENVIRONMENTAL VALUATIONS
 	trust_people trust_institutions reciprocity  worry_jobs right_party vote_le religiousness   /// VALUES 
 	vegetarian  plane large_house time_car growth_harms protected_areas env_committment env_consumption willing_cutsl 	modern_life_harms science_solution donation petition enjoy_nature /// ENV VALUES
 	female age education RINC_decile INC_decile gap_perception children brown_job rural /// DEMOGRAPHICS
